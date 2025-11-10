@@ -1,0 +1,61 @@
+name: ecommerce_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  firebase_core: ^2.32.0
+  flutter_native_splash: 2.4.0
+  firebase_auth: ^4.16.0
+  cloud_firestore: ^4.13.0
+  provider: ^6.1.5+1
+  google_fonts: ^6.3.2
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1 # I have added this package
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/splash_logo.png
+    - assets/images/app_logo.png
+
+# Configuration for flutter_launcher_icons
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/app_logo.png"
+  min_sdk_android: 21 # optional
+
+
+flutter_native_splash:
+
+  # 2. Set the background color of your splash screen
+  color: "#FFFFFF" # This is white
+
+  # 3. Point to your splash logo file
+  image: assets/images/splash_logo.png
+
+  # 4. Configuration for the Android splash screen
+  android_12:
+    color: "#FFFFFF"
+    image: assets/images/splash_logo.png
+
+  # 5. Configuration for the web splash screen
+
+  # Web: only supports `true` (boolean), no image/color override
+
+  web: true
